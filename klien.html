@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <img src="https://static.vecteezy.com/system/resources/previews/005/131/268/original/skull-biker-with-wing-free-vector.jpg" class="icon">
+        <div class="logo_name">Bambang</div>
+        
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+     
+      <li>
+        <a href="firstpage.html">
+            <i class='bx bx-home-alt' ></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li>
+       <a href="news.html">
+        <i class='bx bx-news' ></i>
+         <span class="links_name">Artikel</span>
+       </a>
+       <span class="tooltip">Artikel</span>
+     </li>
+     <li>
+       <a href="event.html">
+        <i class='bx bx-calendar-event' ></i>
+         <span class="links_name">Event</span>
+       </a>
+       <span class="tooltip">Event</span>
+     </li>
+     <li>
+       <a href="galeri.html">
+        <i class='bx bx-photo-album' ></i>
+         <span class="links_name">Galery Foto</span>
+       </a>
+       <span class="tooltip">Galery Foto</span>
+     </li>
+     <li>
+       <a href="klien.html">
+        <i class='bx bx-chat' ></i>
+         <span class="links_name">Klien Kami</span>
+       </a>
+       <span class="tooltip">Klien Kami</span>
+     </li>
+     <li>
+       <a href="login.html">
+        <i class='bx bx-user' ></i>
+         <span class="links_name">Login</span>
+       </a>
+       <span class="tooltip">Login</span>
+     </li>
+     <li>
+       <a href="singup.html">
+        <i class='bx bx-user-plus' ></i>
+         <span class="links_name">Sign Up</span>
+       </a>
+       <span class="tooltip">Sign Up</span>
+     </li>
+  
+     
+    </ul>
+  </div>
+
+  <section id="klien">
+    <div class="judulhal"><h1>Client Says</h1></div>
+    <div class="testi-row">
+      <div class="testicol">
+        <div class="user"><img src="https://www.dailysia.com/wp-content/uploads/2020/06/Rey_Bong_11.jpg?x62393">
+        <div class="userinfo">
+            <h4>Joko Bukan Dodo</h4>
+            <small>@Jokoxxx</small>
+        </div>
+        </div>
+        <p>Rekomen banget buat beli sparepartnya selain murah ternyata bambang workhsop sudah jadi distributor resmi</p>
+      </div>
+      <div class="testicol">
+        <div class="user"><img src="https://www.superprof.co.id/gambar/guru/rumah-guru-saya-bayu-kuswantoro-seorang-guru-sekolah-dasar-sdi-munir-tambun-selatan.jpg">
+            <div class="userinfo">
+                <h4>Bayu Bukan Bayi</h4>
+                <small>@Bayuuuuxxxxx</small>
+            </div>
+            </div>
+        <p>Awalnya takut kesini karena bengkel ini terkenal dengan sebutan geng motor tapi setelah beraniin diri. Ternyata orangnya ramah ramah dan malah sekarang jadi membernya</p>
+      </div>
+      <div class="testicol">
+        <div class="user"><img src="https://assets.skor.id/crop/0x0:0x0/x/photo/2020/05/30/649946027.jpg">
+            <div class="userinfo">
+                <h4>Jajang Jajan Minuman</h4>
+                <small>@jajajajjaja555</small>
+            </div>
+            </div>
+        <p>Dulu sering marah kalau papah ke tempat ini karena geng motor itu serem serem. Ternyata pas udah besar malah pengen buka bengkel seperti ini, banyak rasa kekeluargaannya didalamnya</p>
+      </div>
+    </div>
+    </section>
+
+
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+  
+    closeBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("open");
+      menuBtnChange();
+    });
+  
+    searchBtn.addEventListener("click", ()=>{ 
+      sidebar.classList.toggle("open");
+      menuBtnChange(); 
+    });
+  
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+     if(sidebar.classList.contains("open")){
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+     }else {
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+     }
+    }
+    </script>
+  </body>
+  </html>
